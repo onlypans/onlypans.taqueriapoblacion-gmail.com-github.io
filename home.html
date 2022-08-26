@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Merriweather', serif;
+        }
+
+        .navbar {
+            background-color: #DB222A;
+        }
+
+        footer {
+            background-color: #053c5e;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            /* background-color: dodgerblue;
+            color: white; */
+            /* padding: 15px 20px; */
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/onlypans profile picture.jpeg" alt="" width="60"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <button type="button" class="btn text-white fs-5" data-bs-toggle="modal"
+                            data-bs-target="#signUpModal">
+                            Sign Up
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn text-white fs-5" data-bs-toggle="modal"
+                            data-bs-target="#signInModal">
+                            Sign In
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <!-- Navbar text with an inline element -->
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg bg-primary">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-dark text-center" id="exampleModalLabel">ONLYPANS
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form action="/action_page.php" style="max-width:500px;margin:auto">
+                            <h2>Sign Up</h2>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                                <input class="input-field" type="text" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-key icon"></i>
+                                <input class="input-field" type="password" placeholder="Password" name="psw">
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg bg-primary">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-dark text-center" id="exampleModalLabel">ONLYPANS
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form action="/action_page.php" style="max-width:500px;margin:auto">
+                            <h2>Sign In</h2>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                                <input class="input-field" type="text" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-key icon"></i>
+                                <input class="input-field" type="password" placeholder="Password" name="psw">
+                            </div>
+                            <button type="submit" class="btn">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/Carousel/onlyPansStore.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/Carousel/Taco.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/Carousel/Quesadilla.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/Carousel/tacovege.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/Carousel/Desert.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-5 mb-5">
+            <h1 class="text-center display-2">Onlypans Favorites</h1>
+            <div class="card-group">
+                <div class="card m-3">
+                    <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                    <img src="/img/onlypans favorites.png" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card m-3">
+                    <img src="/img/Carousel/Taco.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card m-3">
+                    <img src="/img/Carousel/tacovege.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card m-3">
+                    <img src="/img/Carousel/Quesadilla.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container mt-5 mb-5 border-dark border-radius">
+                <img src="/img/Delivery.png" class="w-100 h-100 border-dark">
+            </div>
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+
+        </div>
+    </div>
+    <footer class="text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">About Onlypans</h5>
+
+                    <p>
+                        Don't let the name deceive you! Onlypans offers you the best mexican food you can
+                        find.
+                    </p>
+
+                    <p>
+                        Our Quesa Birria Tacos with consomme is a mouth-watering marriage between premium
+                        beef
+                        and
+                        creamy melted cheese.
+                    </p>
+
+                    <div class="mt-4">
+                        <img src="/img/facebook icon.png" class="w-10 h-10">
+                        <!-- <a type=" button" class="btn btn-floating btn-danger btn-lg"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-dribbble"></i></a>
+
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-twitter"></i></a>
+
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a> -->
+
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <!-- <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                        <div class="form-outline form-white mb-4">
+                            <input type="text" id="formControlLg" class="form-control form-control-lg">
+                            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 48.8px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div> -->
+
+                    <ul class="fa-ul" style="margin-left: 1.65em; list-style: none;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">5663
+                                Don
+                                Pedro, Makati, 1210 Metro Manila, Philippines</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">+63
+                                995
+                                217
+                                4326</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">Service:
+                                Dine-In and Take-Away
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Order:
+                                https://www.foodpanda.ph</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Mon - Thu:</td>
+                                <td>11am - 12mn</td>
+                            </tr>
+                            <tr>
+                                <td>Fri - Sat:</td>
+                                <td>11am - 2am</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>11am - 1am</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://www.facebook.com/onlypansph/photos/?ref=page_internal">Onlypans
+                Taqueria
+                Poblacion</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    </div>
+    <!-- End of .container -->
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="//code.tidio.co/u5bibbzqknrnwgkf6kr6liwybgw670ic.js" async></script>
+</body>
+
+</html>

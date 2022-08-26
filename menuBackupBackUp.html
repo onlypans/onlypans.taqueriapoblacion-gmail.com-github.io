@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        h1 {
+            font-family: 'Merriweather', serif;
+        }
+
+        .navbar,
+        .accordion-button,
+        .accordion {
+            background-color: #DB222A;
+        }
+
+        footer {
+            background-color: #053c5e;
+        }
+    </style>
+    <title>Menu</title>
+</head>
+
+<body>
+    <h1>Title</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home.html"><img src="/img/onlypans profile picture.jpeg" alt="" width="60"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="/home.html" active>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#" active>Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <!-- Navbar text with an inline element -->
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Accordion -->
+    <div class="container mt-5 mb-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Birria Tacos - BEST SELLERS
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="mt-1 mb-1">
+                            <div class="card-group d-flex flex-md-row flex-column">
+                                <div class="card m-3">
+                                    <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                                    <img src="/img/Menu/quesa birria taco.png" class="img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Quesa Birria Taco</h5>
+                                        <p class="card-text"><small class="text-muted">Slow cooked USDA beef in
+                                                authentic mexican chills and 16 spices with top grade mozarella cheese,
+                                                3 kinds of sauces, pico de gallo & lime.</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Solo: P380</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Amigas: P750</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3">
+                                    <img src="/img/Menu/carnitas taco.png" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Carnitas Taco (pulled pork)</h5>
+                                        <p class="card-text"><small class="text-muted">Slow cooked top grade pork meat
+                                                in our housespecial recipe, topped with pickled onions and chipotle
+                                                barbeque sauce</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Solo: P350</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Amigas: P680</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3">
+                                    <img src="/img/Menu/camaron shrimp taco.png" class="card-img-top img-fluid"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Camaron Taco</h5>
+                                        <p class="card-text"><small class="text-muted">Fresh shrimp in house special
+                                                marinade, dipped in beer batter & served with homemade coleslaw,
+                                                alfalfa, red radish & pickled onions</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Solo: P400</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Amigas: P780</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 1 - 2nd row -->
+                        <div class="mt-1 mb-1">
+                            <div class="card-group d-flex flex-md-row flex-column">
+                                <div class="card m-3">
+                                    <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                                    <img src="/img/Menu/camaron shrimp tostadas.png" class="img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Camaron Tostadas</h5>
+                                        <p class="card-text"><small class="text-muted">Fresh shrimp in house special
+                                                marinade, dipped in beer batter & served with homemade coleslaw,
+                                                alfalfa, red radish & pickled onion</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Solo: P400</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Amigas: P780</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3">
+                                    <img src="/img/Menu/carnitas taco.png" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pescado Taco</h5>
+                                        <p class="card-text"><small class="text-muted">Fish meat in house special
+                                                marinade, dipped in beer batter & served with home made coleslaw,
+                                                alfalfa, red radish & pickled onions</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Solo: P300</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Amigas: P580</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3 border-0 nobackground">
+                                    <!-- <img src="/img/Menu/carnitas taco.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camaron Shrimp Tostadas</h5>
+                                    <p class="card-text"><small class="text-muted">Fresh shrimp in house special
+                                            marinade, dipped in beer batter & served with homemade coleslaw,
+                                            alfalfa, red radish & pickled onions</small>
+                                    </p>
+                                    <div class="row">
+                                        <p class="card-text col"><small class="text-muted">Solo: P400</small>
+                                        </p>
+                                        <p class="card-text col"><small class="text-muted">Amigos: P780</small>
+                                        </p>
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Accordion 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Quesadillas, Burrito & Regular Tacos
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <div class="mt-1 mb-1">
+                            <div class="card-group d-flex flex-md-row flex-column">
+                                <div class="card m-3">
+                                    <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                                    <img src="/img/Menu/quesadillas.png" class="img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Quesadillas</h5>
+                                        <p class="card-text"><small class="text-muted">Soft tortilla with your
+                                                choice of meat filled with cheese and spices. Served with house
+                                                special sauces and pico de gallo.</small>
+                                        </p>
+                                        <div class="row row-cols-2">
+                                            <p class="card-text col"><small class="text-muted">Carne
+                                                    400</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Camaron
+                                                    400</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Carnitas
+                                                    350</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Pollo
+                                                    300</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Queso
+                                                    250</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3">
+                                    <img src="/img/Menu/Borrito resized.png" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Borrito</h5>
+                                        <p class="card-text"><small class="text-muted">Cilantro lime rice,
+                                                choice of
+                                                meat, beans, corn, cheese, with garlic sauce. Enjoy and be
+                                                filled
+                                                with its savory flavor.</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Solo wrap:
+                                                    P400</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Solo naked:
+                                                    P350</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3">
+                                    <img src="/img/Menu/camaron shrimp taco.png" class="card-img-top img-fluid"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Regulares Taco</h5>
+                                        <p class="card-text"><small class="text-muted">Our one of a kind Mexican
+                                                street tacos. Enjoy and savor our version of the famous street
+                                                food.</small>
+                                        </p>
+                                        <p class="card-text col"><small class="text-muted">Barbacoa Taco "Beef
+                                                Cheeks": P350</small>
+                                        <p class="card-text col"><small class="text-muted">Chicharronnes Taco
+                                                "Pork
+                                                Rinds": P300</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 2 - 2nd row -->
+                        <div class="mt-1 mb-1">
+                            <div class="card-group d-flex flex-md-row flex-column">
+                                <div class="card m-3">
+                                    <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                                    <img src="/img/Menu/Screen Shot 2022-08-24 at 5.54.51 PM.png" class=" img-fluid"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ahumadas "Smoke Meat"</h5>
+                                        <p class="card-text"><small class="text-muted">Meat smoked and slow cooked
+                                                for
+                                                16 hours. Served with house barbeque & chimchurri sauce.</small>
+                                        </p>
+                                        <div class="row">
+                                            <p class="card-text col"><small class="text-muted">Carne: P650</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Polo: P300</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-3">
+                                    <img src="/img/Menu/tacolitosplato.png" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tacolitos Plato</h5>
+                                        <p class="card-text"><small class="text-muted">In this selection we present to
+                                                you 8
+                                                sampler tacos, flavor based on your selection.</small>
+                                        </p>
+                                        <p class="card-text col"><small class="text-muted">Bandeja "1 tray":
+                                                P1200</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card m-3 border-0">
+                                    <!-- <img src="/img/Menu/carnitas taco.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camaron Shrimp Tostadas</h5>
+                                    <p class="card-text"><small class="text-muted">Fresh shrimp in house special
+                                            marinade, dipped in beer batter & served with homemade coleslaw,
+                                            alfalfa, red radish & pickled onions</small>
+                                    </p>
+                                    <div class="row">
+                                        <p class="card-text col"><small class="text-muted">Solo: P400</small>
+                                        </p>
+                                        <p class="card-text col"><small class="text-muted">Amigos: P780</small>
+                                        </p>
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Accordion 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Aperetivos (Appetizers) y Bebidas y Cervezas
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <div class="mt-1 mb-1">
+                                <div class="card-group d-flex flex-md-row flex-column">
+                                    <div class="card m-3">
+                                        <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                                        <img src="/img/Menu/nachos con carne.png" class="img-fluid" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Nachos Con Carne</h5>
+                                            <p class="card-text"><small class="text-muted">Made with crispy and
+                                                    hot nacho chips topped with another generous serving of marinated
+                                                    minced
+                                                    beef, tomato, bell pepper with house-made salsa for dipping.</small>
+                                            </p>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Solo (good for sharing):
+                                                    P350
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card m-3">
+                                        <img src="/img/Menu/camaron ceviche.png" class="card-img-top img-fluid"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Camaron Ceviche</h5>
+                                            <p class="card-text"><small class="text-muted">Raw shrimp cooked in lime
+                                                    juice
+                                                    and tossed fresh tomatoes, onion, jalapenos, bell pepper, and
+                                                    cilantro. Perfect for an appetizer before your main meal.</small>
+                                            </p>
+                                            <p class="card-text col "><small class="text-muted">Solo (good for
+                                                    sharing): P400</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card m-3">
+                                        <img src="/img/Menu/sopa de tortilla.png" class="card-img-top img-fluid"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sopa de Tortilla (Corn Tortilla Soup</h5>
+                                            <p class="card-text"><small class="text-muted">Our version of mexican corn
+                                                    soup
+                                                    made from fried corn tortilla pieces, submerged into a broth of
+                                                    tomato,
+                                                    garlic, onion & chile de arbol and epazote.</small>
+                                            </p>
+                                            <p class="card-text col "><small class="text-muted">Solo (good for
+                                                    sharing): P200</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion 2 - 2nd row -->
+                            <div class="mt-1 mb-1">
+                                <div class="card-group d-flex flex-md-row flex-column">
+                                    <div class="card m-3">
+                                        <!-- <img src="/img/onlypans favorites.png" class="card-img-top" alt="..."> -->
+                                        <img src="/img/Menu/San Miguel pale pilsen.png" class=" img-fluid" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cervezas "Beer"</h5>
+                                            <p class="card-text"><small class="text-muted">Enjoy your meal with these
+                                                    ice
+                                                    cold cervezas.</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Corona: P200</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">San Miguel Pale Pilsen: P
+                                                    150</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">San Mig Light: P
+                                                    150</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card m-3">
+                                        <img src="/img/Menu/Horchata.png" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Horchata</h5>
+                                            <p class="card-text"><small class="text-muted">Mexican rice milk with dairy
+                                                    milk, cinnamon & vanilla</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">12 oz cup: P150</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Take Out 350ml glass of
+                                                    bottle: P200</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card m-3 border-0">
+                                        <img src="/img/Menu/postre.png" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Postre (Desert)</h5>
+                                            <p class="card-text"><small class="text-muted">The desert to top of your
+                                                    meal.
+                                                    Pay de Queso. House special
+                                                    cheesecake.</small>
+                                            </p>
+                                            <p class="card-text col"><small class="text-muted">Bites: P150</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div>
+        <footer class="text-white text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About Onlypans</h5>
+                        <p>
+                            Don't let the name deceive you! Onlypans offers you the best mexican food you can
+                            find.
+                        </p>
+                        <p>
+                            Our Quesa Birria Tacos with consomme is a mouth-watering marriage between premium
+                            beef
+                            and
+                            creamy melted cheese.
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- Facebook -->
+                            <a type="button" class="btn btn-floating btn-danger btn-lg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <!-- Dribbble -->
+                            <a type="button" class="btn btn-floating btn-danger btn-lg"><i
+                                    class="fab fa-dribbble"></i></a>
+                            <!-- Twitter -->
+                            <a type="button" class="btn btn-floating btn-danger btn-lg"><i
+                                    class="fab fa-twitter"></i></a>
+                            <!-- Google + -->
+                            <a type="button" class="btn btn-floating btn-danger btn-lg"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <!-- Linkedin -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <ul class="fa-ul" style="margin-left: 1.65em; list-style: none;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">5663
+                                    Don
+                                    Pedro, Makati, 1210 Metro Manila, Philippines</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">+63
+                                    995
+                                    217
+                                    4326</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">Service:
+                                    Dine-In and Take-Away
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Order:
+                                    https://www.foodpanda.ph</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>11am - 12mn</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>11am - 2am</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>11am - 1am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="https://www.facebook.com/onlypansph/photos/?ref=page_internal">Onlypans
+                    Taqueria
+                    Poblacion</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
