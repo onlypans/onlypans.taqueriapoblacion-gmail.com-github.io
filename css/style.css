@@ -6,6 +6,124 @@
     background-color: #FCF8E8;
 } */
 
+.navbar,
+.accordion-button {
+    background-color: #DB222A;
+}
+
+.karlaT {
+    font-family: font-family: 'Merriweather Sans', sans-serif;
+    color: RGB(85, 85, 83);
+}
+
+.karlaP {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    color: RGB(85, 85, 83);
+}
+
+.infoImg {
+    width: 125px;
+    height: 100px;
+}
+
+.infoImg2 {
+    width: 100px;
+    height: 100px;
+}
+
+.infoImg3 {
+    width: 100px;
+    height: 100px;
+}
+
+.infoT {
+    font-family: font-family: 'Merriweather Sans', sans-serif;
+    color: RGB(85, 85, 83);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.infoP {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    color: RGB(85, 85, 83);
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.reviews {
+    height: 12em;
+    background-color: rgb(233, 230, 225);
+}
+
+.reviews img {
+    width: 100px;
+    height: 100px;
+}
+
+.reviewName {
+    font-family: font-family: 'Merriweather Sans', sans-serif;
+    color: RGB(85, 85, 83);
+}
+
+.reviewActual {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    color: RGB(85, 85, 83);
+    font-size: 14px;
+    font-weight: 200;
+    text-align: start;
+}
+
+.reviewActual span {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    color: RGB(85, 85, 83);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.footer {
+    background-color:
+        #db222a;
+    opacity: .8;
+}
+
+.footer h5 {
+    font-family: font-family: 'Merriweather Sans', sans-serif;
+    color: RGB(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer p,
+.footer td {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    color: RGB(255, 255, 255);
+    font-size: 14px;
+    font-weight: 200;
+
+}
+
+.homepageTop {
+    height: 100px;
+}
+
+.delivery {
+    width: 75px;
+    height 75px;
+    display: inline;
+}
+
+.onlypansicon {
+    width: 250px;
+    height: 100px;
+    display: inline;
+}
+
+
 
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -106,7 +224,7 @@ h1 {
 }
 
 
-1st .card {
+/* .card {
     border-radius: 4px;
     background: #fff;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
@@ -118,7 +236,7 @@ h1 {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-}
+} */
 
 /* 2nd  */
 
@@ -191,4 +309,91 @@ h1 {
 
 .card-body {
     border-radius: 10%;
+}
+
+.container1 {
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px;
+}
+
+.container1:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container1::before,
+.container1::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+}
+
+.container1::before {
+    transform-origin: left top;
+}
+
+.container1::after {
+    transform-origin: right bottom;
+}
+
+.container1:hover::before,
+.container1:hover::after,
+.container1:focus::before,
+.container1:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .favoriteS {
+        display: none;
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 575px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .favoriteL {
+        display: none;
+    }
+
+    .info1 {
+        width: 25%
+    }
+
+    .info2 {
+        width: 50%;
+    }
+
+    .info3 {
+        width: 25%
+    }
 }

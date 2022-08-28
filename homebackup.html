@@ -7,142 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Condensed&display=swap"
-        rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <style>
-        h1 {
-            font-family: 'Merriweather', serif;
-        }
-
-        .navbar {
-            background-color: #DB222A;
-        }
-
-        footer {
-            background-color: #053c5e;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .input-container {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .icon {
-            padding: 10px;
-            background: dodgerblue;
-            color: white;
-            min-width: 50px;
-            text-align: center;
-        }
-
-        .input-field {
-            width: 100%;
-            padding: 10px;
-            outline: none;
-        }
-
-        .input-field:focus {
-            border: 2px solid dodgerblue;
-        }
-
-        /* Set a style for the submit button */
-        .btn {
-            /* background-color: dodgerblue;
-            color: white; */
-            /* padding: 15px 20px; */
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
-        }
-
-        .btn:hover {
-            opacity: 1;
-        }
-
-        .reviews {
-            width: auto;
-            height: 300px;
-        }
-
-        .parallax {
-            /* The image used */
-            background-image: url("/img/Carousel/onlyPansStore.png");
-            /* Set a specific height */
-            min-height: 500px;
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .content1 {
-            background-image: url(/img/carousel\ 4.jpeg);
-            opacity: 0.6;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: auto;
-        }
-
-
-        .parallax-2 {
-            /* The image used */
-            background-image: url("/img/Carousel/Taco.png");
-            /* Set a specific height */
-            min-height: 500px;
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            /* max-width: 300px; */
-            margin: auto;
-            text-align: center;
-            font-family: arial;
-            border: 0;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
+        /* a two column-layout instead of four columns */
         @media screen and (max-width: 800px) {
             .column {
                 flex: 50%;
@@ -163,257 +31,450 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/img/onlypans profile picture.jpeg" alt="" width="60"
-                    height="60"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-                    <li class="nav-item">
-                        <button type="button" class="btn text-white fs-5 btn-danger" data-bs-toggle="modal"
-                            data-bs-target="#signUpModal">
-                            Sign Up
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn text-white fs-5" data-bs-toggle="modal"
-                            data-bs-target="#signInModal">
-                            Sign In
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/menu.html">Our Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/aboutUs.html">About Us</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    <!-- Navbar text with an inline element -->
-                </span>
-            </div>
+
+    <!-- <div class="row homepageTop pt-3 pb-5">
+        <div class="col-4 pt-3">
+            <p class="karlaP" style="display: inline">Order via</p>
+            <img src="/img/icons/foodpanda panda icon 2.30.32 PM.png" class="delivery">
+            <img src="/img/icons/grab icon.png" class="delivery">
         </div>
-    </nav>
+        <div class="col-4 onlypansicon pt-3 pb-5">
+            <img src="/img/icons/onlypansicon.png" class="img-fluid">
+        </div>
+        <div class="col-4 pt-3">
+            <img src="/img/icons/addtocart.png" class="img-fluid delivery">
+        </div>
+    </div> -->
 
-
-
-    <!-- Sign Up Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg bg-primary">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title text-dark text-center" id="exampleModalLabel">ONLYPANS
-                    </h5>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/img/onlypans profile picture.jpeg" alt="" width="60"
+                        height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                        <li class="nav-item">
+                            <button type="button" class="btn text-white fs-5 karlaT" data-bs-toggle="modal"
+                                data-bs-target="#signInModal">
+                                Sign In
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white karlaT" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white karlaT" aria-current="page" href="/menu.html">Our
+                                Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white karlaT" href="/events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white karlaT" href="/aboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <!-- Navbar text with an inline element -->
+                    </span>
                 </div>
-                <div class="modal-body">
-                    <div>
-                        <form action="/action_page.php" style="max-width:500px;margin:auto">
-                            <h2>Sign Up</h2>
-                            <div class="input-container">
-                                <i class="fa fa-user icon"></i>
-                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-envelope icon"></i>
-                                <input class="input-field" type="text" placeholder="Email" name="email">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-key icon"></i>
-                                <input class="input-field" type="password" placeholder="Password" name="psw">
-                            </div>
-                            <button type="submit" class="btn">Sign Up</button>
-                        </form>
+            </div>
+        </nav>
+
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg bg-primary">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title text-dark text-center karlaT" id="exampleModalLabel">ONLYPANS
+                        </h5>
                     </div>
-                </div>
-                <!-- <div class="modal-footer">
+                    <div class="modal-body">
+                        <div>
+                            <form action="/action_page.php" style="max-width:500px;margin:auto">
+                                <h2 class="karlaT">Sign Up</h2>
+                                <div class="input-container">
+                                    <i class="fa fa-user icon"></i>
+                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                                </div>
+                                <div class="input-container">
+                                    <i class="fa fa-envelope icon"></i>
+                                    <input class="input-field" type="text" placeholder="Email" name="email">
+                                </div>
+                                <div class="input-container">
+                                    <i class="fa fa-key icon"></i>
+                                    <input class="input-field" type="password" placeholder="Password" name="psw">
+                                </div>
+                                <button type="submit" class="btn">Sign Up</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-start fs-6 fs-strong">ApplicationUser</p>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label">FullName</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <button type="button" class="btn btn-primary col-3 me-5">Sign
+                                                        Up</button>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button> -->
+                                                <p class="text-start text-secondary">Sign up successful. Thanks for
+                                                    registering
+                                                    with us!
+                                                    Go to <a href="/logIn.html">Login!</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save Changes</button>
             </div> -->
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Sign In Modal -->
-    <div class="modal fade" id="signInModal" tabindex="1" aria-labelledby="signInModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg bg-primary">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title text-dark text-center" id="exampleModalLabel">ONLYPANS
-                    </h5>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <form action="/action_page.php" style="max-width:500px;margin:auto">
-                            <h2>Sign In</h2>
-                            <div class="input-container">
-                                <i class="fa fa-user icon"></i>
-                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signInLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <p class="text-start fs-6 fs-strong">ApplicationUser</p> -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
                             </div>
-                            <div class="input-container">
-                                <i class="fa fa-envelope icon"></i>
-                                <input class="input-field" type="text" placeholder="Email" name="email">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
                             </div>
-                            <div class="input-container">
-                                <i class="fa fa-key icon"></i>
-                                <input class="input-field" type="password" placeholder="Password" name="psw">
+                            <button type="button" class="btn btn-primary col-3 me-5">Sign In</button>
+                            <button type="button" class="btn btn-primary col-3 ms-auto me-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Sign Up
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-start fs-6 fs-strong">ApplicationUser</p>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <button type="button" class="btn btn-primary col-3 me-5">Sign
+                                                    In</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button> -->
+                                            <p class="text-start text-secondary">Sign In successful
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <button type="submit" class="btn">Sign In</button>
-                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> -->
+                        <p class="text-start text-secondary">Sign up successful. Thanks for registering
+                            with us!
+                            Go to <a href="/logIn.html">Login!</a></p>
                     </div>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+
+        <!-- end of nav -->
+
+        <!-- favorites start -->
+        <div class="mt-3 mb-5 favoriteL">
+            <div>
+                <img src="">
+            </div>
+            <div class="card-group">
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/Full size/favorites/quesa birria taco.png" class="card-img-top" alt="...">
+                    <h5 class="card-title middle">Card title</h5>
+                    <!-- <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/Full size/favorites/cartinas taco.png" class="card-img-top" alt="...">
+                    <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div> -->
-            </div>
-        </div>
-    </div>
-
-    <div class="parallax">
-    </div>
-    <div class="content1" style="height:1050px; background-color: black ; opacity: 25;">
-        <h1 class="display-2 pb-0 text-white">The Food</h1>
-        <div class="card m-5">
-            <div class=" row">
-                <div class="col-md-8">
-                    <img src="/img/Menu//quesa birria taco.png" class="img-fluid rounded-start" alt="...">
                 </div>
-                <div class="col-md-4 align-self-center">
-                    <div class="card-body">
-                        <h5 class="card-title fs-1">Quesa Birria Taco</h5>
-                    </div>
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/Full size/favorites/camaron tostadas.png" class="card-img-top" alt="...">
+                    <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div> -->
                 </div>
-            </div>
-        </div>
-        <div class="card m-5">
-            <div class=" row">
-                <div class="col-md-4 align-self-center">
-                    <div class="card-body">
-                        <h5 class="card-title vertical-align">Camaron Shrimp Tostadas</h5>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <img src="/img/Menu/camaron shrimp tostadas.png" class="img-fluid rounded-start" alt="...">
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/Full size/favorites/quesadillas.png" class="card-img-top" alt="...">
+                    <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div> -->
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <div class="parallax-2">
-    </div>
-    <div style="height:1050px; background-color: black ; opacity: 25;">
-        <h1 class="display-2 pb-0 text-white">The Vibe</h1>
-        <div class="card m-5">
-            <div class=" row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <img src="/img/the vibe 01.png" class="img-fluid rounded-start" alt="...">
-                    </div>
+        <div class="mt-5 mb-5 favoriteS">
+            <h1 class="text-center display-3 karlaT">Onlypans Favorites</h1>
+            <div class="card-group">
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/quesa birria taco.png" class="card-img-top" alt="...">
+                    <h5 class="card-title middle">Card title</h5>
+                    <!-- <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                 </div>
-                <div class="col-md-4 align-self-center">
-                    <div class="card-body">
-                        <h5 class="card-title fs-1">Sampiro Festival</h5>
-                    </div>
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/carnitas taco.png" class="card-img-top" alt="...">
+                    <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div> -->
+                </div>
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/camaron shrimp tostadas.png" class="card-img-top" alt="...">
+                    <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div> -->
+                </div>
+                <div class="card container1 m-3">
+                    <img src="/img/Menu/quesadillas.png" class="card-img-top" alt="...">
+                    <!-- <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div> -->
                 </div>
             </div>
         </div>
-        <div class="card m-5">
-            <div class=" row">
-                <div class="col-md-4 align-self-center">
-                    <div class="card-body">
-                        <h5 class="card-title vertical-align">Street Party</h5>
+        <!-- favorites end -->
+
+        <!-- location start -->
+        <div class="mt-5 mb-5">
+            <img src="/img/Carousel/onlyPansStore.png" class="img-fluid opacity-75">
+        </div>
+        <!-- location end -->
+
+
+        <!-- info start -->
+        <div class="mt-5 mb-5">
+            <!-- <h1 class="text-center display-3 karlaT">Onlypans Favorites</h1> -->
+            <div class="card-group row d-flex flex-row justify-content-center info">
+                <div class="card col-3 container1 info1">
+                    <div class="text-center mb-2">
+                        <img src="/img/icons/delivery motorbike.jpeg" class="infoImg" alt="deliveryIcon">
                     </div>
+                    <p class="infoT text-center">Order online</p>
+                    <p class="infoP text-center"><a href="https://www.foodpanda.ph/restaurant/j5oj/onlypans-taqueria"
+                            target="_blank">Food
+                            Panda</a> and <a
+                            href="https://food.grab.com/ph/en/restaurant/error-delivery/2-C3AYC8CJMGJUHE"
+                            target="_blank">Grab</a>
+                    </p>
                 </div>
-                <div class="col-md-8">
-                    <img src="/img/the vibe 02.png" class="img-fluid rounded-start" alt="...">
+                <div class="card col-3 container1 info2">
+                    <div class="text-center mb-2">
+                        <a href="https://www.facebook.com/onlypansph/?ref=page_internal" target="_blank"><img
+                                src="/img/icons/facebook.png" class="infoImg2 container1 img-rounded"
+                                alt="Only Pans Facebook Page"></a>
+                        <a href="https://www.instagram.com/onlypanspoblacion/?hl=en" target="_blank"><img
+                                src="/img/icons/instagram.png" class="infoImg2 container1 img-rounded"
+                                alt="Only Pans Instagram Page"></a>
+                    </div>
+                    <p class="infoT text-center">Our Facebook and Instagram Accounts</p>
+                    <!-- <p class="infoP text-center">Click on icons to visit our social media accounts</p> -->
+                </div>
+                <div class="card col-3 container1 info3">
+                    <div class="text-center">
+                        <img src="/img/icons/promo.png" class="infoImg3" alt="...">
+                    </div>
+                    <p class="infoT fs-5 fw-strong text-center">Promo</p>
+                    <p class="infoP text-center">Our current promotions</p>
                 </div>
             </div>
         </div>
+        <!-- info end -->
+
+        <!-- reviews start carousel -->
+        <div class="reviews w-100 mt-5 mb-5 container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mt-5 text-center">
+                            <div class="col-2">
+                                <img src="/img/reviews/Review profilepic1.png" class="d-block img-fluid ms-5"
+                                    alt="profile pic1">
+                            </div>
+                            <div class="col-2 mt-4 reviewName">
+                                <p>Michael Nepomuceno</p>
+                            </div>
+                            <div class="col-7">
+                                <p class="reviewActual"><span>“</span>The place was jam packed and when we got there
+                                    they're already
+                                    sold out, but the
+                                    owner informed me that they'll restock after 2 hours. Came back after 2 hours and
+                                    was not disappointed. Ordered quesadilla and quesa birria (best seller), worth it!
+                                    Will definitley come back!<span>”</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mt-4 text-center">
+                            <div class="col-2">
+                                <img src="/img/reviews/Review profilepic2.png" class="d-block img-fluid ms-5"
+                                    alt="profile pic2">
+                            </div>
+                            <div class="col-2 mt-4 reviewName">
+                                <p>Vanna JD</p>
+                            </div>
+                            <div class="col-7 d-flex align-items-center">
+                                <p class="reviewActual"><span>“</span>Been wanting to pop by Poblacion for their tacos,
+                                    but I can’t wait so Foodpanda na lang! I ordered the Queso Birria Tacos and Cheese
+                                    Quesadilla.
+                                    Their tacos are pretty loaded! It’s true that you get what you pay for. 1 taco and 2
+                                    slices of quesadilla lang kinain ko for lunch and it was pretty filling.
+                                    Nasarapan ba ako? YES! I am aware of some feedback na maalat daw… happy to share
+                                    that mine wasn’t 🙌🏼 Maybe they tweaked the recipe na… so give it another shot
+                                    💖💖💖<span>”</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mt-4 text-center">
+                            <div class="col-2">
+                                <img src="/img/reviews/Review profilepic3.png" class="d-block img-fluid ms-5"
+                                    alt="profile pic3">
+                            </div>
+                            <div class="col-2 mt-4 reviewName">
+                                <p>Katriz Rafanan </p>
+                            </div>
+                            <div class="col-7">
+                                <p class="reviewActual"><span>“</span>We visit the onlypans poblacion today and they are
+                                    doing sanitation & cleaning, we are very sad bec we drove 3 hrs from Rizal to Makati
+                                    just to try the tacos! But the owner let us experience the goodness of their food 🥲
+                                    AAAAND THE FOOD WAS SO SO DELICIOUS AND OUTRAGEOUS!!!
+                                    CANT GET ENOUGH OF THEIR TACOS, THE BEST THEEEEE BEST 🌮😭😭😭😭😭😭😭
+                                    100/100 PERIODTTTT<span>”</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- reviews end carousel-->
+
     </div>
 
-
-    <footer class="text-white text-center text-lg-start">
-        <!-- Grid container -->
+    <!-- footer start-->
+    <footer class="text-white text-center text-lg-start footer">
         <div class="container p-4">
-            <!--Grid row-->
             <div class="row mt-4">
-                <!--Grid column-->
                 <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">About Onlypans</h5>
-
-                    <p>
-                        Don't let the name deceive you! Onlypans offers you the best mexican food you can
+                    <h5 class="text-uppercase mb-4 karenT">About Onlypans</h5>
+                    <p class="karlaP">Don't let the name deceive you! Onlypans offers you the best mexican food you can
                         find.
                     </p>
-
-                    <p>
-                        Our Quesa Birria Tacos with consomme is a mouth-watering marriage between premium
-                        beef
-                        and
+                    <p>Our Quesa Birria Tacos with consomme is a mouth-watering marriage between premium beef and
                         creamy melted cheese.
                     </p>
-
-                    <div class="mt-4">
-                        <img src="/img/facebook icon.png" class="w-10 h-10">
-                        <!-- <a type=" button" class="btn btn-floating btn-danger btn-lg"><i
-                            class="fab fa-facebook-f"></i></a>
-
-                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-dribbble"></i></a>
-
-                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-twitter"></i></a>
-
-                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i
-                                class="fab fa-google-plus-g"></i></a> -->
-
-                    </div>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
                 <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <!-- <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-
-                        <div class="form-outline form-white mb-4">
-                            <input type="text" id="formControlLg" class="form-control form-control-lg">
-                            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
-                            <div class="form-notch">
-                                <div class="form-notch-leading" style="width: 9px;"></div>
-                                <div class="form-notch-middle" style="width: 48.8px;"></div>
-                                <div class="form-notch-trailing"></div>
-                            </div>
-                        </div> -->
-
                     <ul class="fa-ul" style="margin-left: 1.65em; list-style: none;">
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">5663
-                                Don
-                                Pedro, Makati, 1210 Metro Manila, Philippines</span>
+                            <p>5663 Don Pedro, Makati, 1210 Metro Manila, Philippines</p>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">+63
-                                995
-                                217
-                                4326</span>
+                            <p>+63 995 217 4326</p>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">Service:
-                                Dine-In and Take-Away
-                        </li>
+                            <p>Service: Dine-In and Take-Away</p>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">Order:
-                                https://www.foodpanda.ph</span>
+                            <p>Order: https://www.foodpanda.ph</p>
                         </li>
                     </ul>
                 </div>
@@ -458,7 +519,6 @@
 
     </div>
     <!-- End of .container -->
-
     <script src="/js/bootstrap.min.js"></script>
     <script src="//code.tidio.co/u5bibbzqknrnwgkf6kr6liwybgw670ic.js" async></script>
     <div id="fb-root"></div>
