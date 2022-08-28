@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -71,21 +73,276 @@
         .btn:hover {
             opacity: 1;
         }
+
+        .reviews {
+            width: auto;
+            height: 300px;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url("/img/Carousel/onlyPansStore.png");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content1 {
+            background-image: url(/img/carousel\ 4.jpeg);
+            opacity: 0.6;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+
+
+        .parallax-2 {
+            /* The image used */
+            background-image: url("/img/Carousel/Taco.png");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* max-width: 300px; */
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            border: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
     </style>
     <title>Home</title>
 </head>
 
 <body>
-    <div class="bg-img">
-        <div class="container">
-            <div class="topnav">
-                <a href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/onlypans profile picture.jpeg" alt="" width="60"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <button type="button" class="btn text-white fs-5 btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#signUpModal">
+                            Sign Up
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn text-white fs-5" data-bs-toggle="modal"
+                            data-bs-target="#signInModal">
+                            Sign In
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <!-- Navbar text with an inline element -->
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg bg-primary">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-dark text-center" id="exampleModalLabel">ONLYPANS
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form action="/action_page.php" style="max-width:500px;margin:auto">
+                            <h2>Sign Up</h2>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                                <input class="input-field" type="text" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-key icon"></i>
+                                <input class="input-field" type="password" placeholder="Password" name="psw">
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div> -->
             </div>
         </div>
     </div>
+
+
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg bg-primary">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-dark text-center" id="exampleModalLabel">ONLYPANS
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form action="/action_page.php" style="max-width:500px;margin:auto">
+                            <h2>Sign In</h2>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                                <input class="input-field" type="text" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-key icon"></i>
+                                <input class="input-field" type="password" placeholder="Password" name="psw">
+                            </div>
+                            <button type="submit" class="btn">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax">
+    </div>
+    <div class="content1" style="height:1050px; background-color: black ; opacity: 25;">
+        <h1 class="display-2 pb-0 text-white">The Food</h1>
+        <div class="card m-5">
+            <div class=" row">
+                <div class="col-md-8">
+                    <img src="/img/Menu//quesa birria taco.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <div class="card-body">
+                        <h5 class="card-title fs-1">Quesa Birria Taco</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card m-5">
+            <div class=" row">
+                <div class="col-md-4 align-self-center">
+                    <div class="card-body">
+                        <h5 class="card-title vertical-align">Camaron Shrimp Tostadas</h5>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <img src="/img/Menu/camaron shrimp tostadas.png" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax-2">
+    </div>
+    <div style="height:1050px; background-color: black ; opacity: 25;">
+        <h1 class="display-2 pb-0 text-white">The Vibe</h1>
+        <div class="card m-5">
+            <div class=" row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <img src="/img/the vibe 01.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <div class="card-body">
+                        <h5 class="card-title fs-1">Sampiro Festival</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card m-5">
+            <div class=" row">
+                <div class="col-md-4 align-self-center">
+                    <div class="card-body">
+                        <h5 class="card-title vertical-align">Street Party</h5>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <img src="/img/the vibe 02.png" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="text-white text-center text-lg-start">
         <!-- Grid container -->
@@ -199,8 +456,14 @@
         <!-- Copyright -->
     </footer>
 
+    </div>
+    <!-- End of .container -->
+
     <script src="/js/bootstrap.min.js"></script>
     <script src="//code.tidio.co/u5bibbzqknrnwgkf6kr6liwybgw670ic.js" async></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0"
+        nonce="6mNoYMcY"></script>
 </body>
 
 </html>

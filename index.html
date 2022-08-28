@@ -79,6 +79,11 @@
         .btn:hover {
             opacity: 1;
         }
+
+        .reviews {
+            width: auto;
+            height: 300px;
+        }
     </style>
     <title>Home</title>
 </head>
@@ -96,7 +101,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                     <li class="nav-item">
-                        <button type="button" class="btn text-white fs-5" data-bs-toggle="modal"
+                        <button type="button" class="btn text-white fs-5 btn-danger" data-bs-toggle="modal"
                             data-bs-target="#signUpModal">
                             Sign Up
                         </button>
@@ -300,10 +305,23 @@
                 </div>
             </div>
 
-
-            <div class="container mt-5 mb-5 border-dark border-radius">
-                <img src="/img/Delivery.png" class="w-100 h-100 border-dark">
+            <div class="row">
+                <div class="col-3">
+                    <img src="/img/reviews/Review 01.png">
+                </div>
+                <div class="col-3">
+                    <img src="/img/reviews/Review 02.png">
+                </div>
+                <div class="col-3">
+                    <img src="/img/reviews/Review 03.png">
+                </div>
             </div>
+
+
+            <!-- <div class="container mt-5 mb-5 border-dark border-radius">
+                <img src="/img/Delivery.png" class="w-100 h-100 border-dark">
+            </div> -->
+
             <!-- Remove the container if you want to extend the Footer to full width. -->
 
         </div>
@@ -425,6 +443,9 @@
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="//code.tidio.co/u5bibbzqknrnwgkf6kr6liwybgw670ic.js" async></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0"
+        nonce="6mNoYMcY"></script>
 </body>
 
 </html>
